@@ -5,7 +5,7 @@ PROJECT_NAME="$(basename "$PROJECT_ROOT")"
 
 VERSION="$(cat "$PROJECT_ROOT/src/package.json" | grep '"version"' | cut -d\" -f4)"
 
-rsync -vrptgoLk --progress --delete-before \
+rsync -vrLkpogt --delete-before --progress \
 	--exclude .DS_Store \
 	--exclude build \
 	--exclude node_modules \
