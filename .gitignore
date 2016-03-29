@@ -1,0 +1,6 @@
+.idea/
+*.iml
+*.zip
+src/build/
+src/node_modules/
+src/typings/
