@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
 PROJECT_ROOT="$(cd "$(dirname "$0")" && pwd)"
+
 PROJECT_NAME="$(cat "$PROJECT_ROOT/src/package.json" | grep '"name"' | cut -d\" -f4)"
 PROJECT_VERSION="$(cat "$PROJECT_ROOT/src/package.json" | grep '"version"' | cut -d\" -f4)"
 
