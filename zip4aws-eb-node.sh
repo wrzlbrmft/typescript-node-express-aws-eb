@@ -1,13 +1,12 @@
 #!/usr/bin/env sh
 
-PROJECT_ROOT=$( cd "`dirname "$0"`" && pwd )
-PROJECT_NAME="`basename "$PROJECT_ROOT"`"
+PROJECT_ROOT="$(cd "$(dirname "$0")" && pwd)"
+PROJECT_NAME="$(basename "$PROJECT_ROOT")"
 
-VERSION="`cat "$PROJECT_ROOT/src/package.json" | grep '"version"' | awk -F '"' '{ print $4 }'`"
+VERSION="$(cat "$PROJECT_ROOT/src/package.json" | grep '"version"' | cut -d\" -f4)"
 
 rsync -vrptgoLk --progress --delete-before \
 	--exclude .DS_Store \
-	--exclude .gitignore \
 	--exclude build \
 	--exclude node_modules \
 	--exclude typings \
