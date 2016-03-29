@@ -1,5 +1,5 @@
 {
-  "name": "typescript-node-express",
+  "name": "typescript-node-express-aws-eb",
   "version": "0.0.1",
   "dependencies": {
     "express": "^4.13.4"
