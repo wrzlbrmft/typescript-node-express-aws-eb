@@ -2,11 +2,11 @@
   "name": "typescript-node-express-aws-eb",
   "version": "0.0.1",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "*"
   },
   "devDependencies": {
-    "typescript": "^1.8.9",
-    "typings": "^0.7.9"
+    "typescript": "*",
+    "typings": "*"
   },
   "scripts": {
     "postinstall": "typings install",
