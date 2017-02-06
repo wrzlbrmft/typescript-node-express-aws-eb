@@ -34,7 +34,7 @@ To create a zip file of the app to be deployed to
 [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/), run
 
 ```
-./zip4aws-eb-node.sh
+./mkzip.sh
 ```
 
 The zip file will be named `typescript-node-express-aws-eb-<version>.zip`, with
