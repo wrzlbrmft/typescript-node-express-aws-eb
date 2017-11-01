@@ -9,7 +9,6 @@ rsync -vrLkpogt --delete-before --progress \
 	--exclude .DS_Store \
 	--exclude build \
 	--exclude node_modules \
-	--exclude typings \
 		"$PROJECT_ROOT/src" "$PROJECT_ROOT/tmp"
 
 ZIP="$PROJECT_ROOT/$PROJECT_NAME-$PROJECT_VERSION.zip"
