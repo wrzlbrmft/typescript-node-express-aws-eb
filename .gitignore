@@ -3,3 +3,4 @@
 *.zip
 src/build/
 src/node_modules/
+src/package-lock.json

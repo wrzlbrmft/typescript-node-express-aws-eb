@@ -40,7 +40,7 @@ To create a zip file of the app to be deployed to
 The zip file will be named `typescript-node-express-aws-eb-<version>.zip`, with
 _<version>_ set to the `version` setting as of `package.json`.
 
-Upload and deploy the zip file to an AWS Beanstalk Node.js environment.
+Upload and deploy the zip file to a Node.js environment.
 
 ## License
 
